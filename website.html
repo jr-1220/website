@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ateneo de Iloilo</title>
+  <style>
+    body {
+      background-color: #ffe6e6;
+      font-family: "Times New Roman", cursive;
+      text-align: center;
+    }
+
+    header {
+      background-color: #990000;
+      color: white;
+      padding: 15px;
+    }
+
+    .alert-banner {
+      background: yellow;
+      color: red;
+      font-weight: bold;
+      padding: 10px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .login-box {
+      border: 3px dashed red;
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      box-shadow: 0 0 10px red;
+    }
+
+    input, button {
+      margin: 10px;
+      padding: 10px;
+      width: 90%;
+    }
+
+    button {
+      background: lime;
+      border: 2px blue;
+      font-weight: bold;
+      color: darkblue;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 10px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ATENEO DE ILOILO</h1>
+    <p>Important: All students must log in now to avoid account deletion!</p>
+  </header>
+
+  <div class="alert-banner">
+    🚨 URGENT: Scholarships will be revoked unless you confirm now!
+  </div>
+
+  <div class="login-box">
+    <h2>Student Portal Login</h2>
+    <form onsubmit="return fakeLogin()">
+      <input type="text" placeholder="School Email"><br>
+      <input type="password" placeholder="Password"><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <p><a href="http://scholarship-stluz-gov.win">Claim your ₱20,000 school grant here!</a></p>
